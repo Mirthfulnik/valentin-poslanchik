@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Esqadero FF CY";
+  src: url("./Esqadero FF CY 4F-Regular.otf") format("opentype"),
+       url("./Esqadero FF CY 4F-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "Esqadero FF CY", sans-serif;
+}
+
+.border-orange-500 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(65 54 89 / var(--tw-border-opacity)) !important;
+}
+
+.text-orange-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(65 54 89 / var(--tw-text-opacity)) !important;
+}
+
+.bg-orange-500,
+.hover\:bg-orange-500:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(65 54 89 / var(--tw-bg-opacity)) !important;
+}
+
+.focus\:ring-orange-500:focus,
+.ring-orange-500 {
+  --tw-ring-opacity: 1 !important;
+  --tw-ring-color: rgb(65 54 89 / var(--tw-ring-opacity)) !important;
+}
+
+.hover\:text-orange-500:hover,
+.text-orange-500:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(65 54 89 / var(--tw-text-opacity)) !important;
+}
+
+.focus\:text-orange-500:focus,
+.active\:text-orange-500:active {
+  --tw-text-opacity: 1 !important;
+  color: rgb(65 54 89 / var(--tw-text-opacity)) !important;
+}
+
+.focus\:border-orange-500:focus,
+.active\:border-orange-500:active {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(65 54 89 / var(--tw-border-opacity)) !important;
+}
+index.html
