@@ -15,20 +15,20 @@ select {
   font-family: "Esqadero FF CY", sans-serif;
 }
 
-.border-orange-500 {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(65 54 89 / var(--tw-border-opacity)) !important;
+:root {
+  --primary: 259 24% 28% !important;
+  --accent: 259 24% 28% !important;
+  --sidebar-primary: 259 24% 28% !important;
+  --sidebar-ring: 259 24% 28% !important;
+  --ring: 259 24% 28% !important;
 }
 
-.text-orange-500 {
-  --tw-text-opacity: 1 !important;
-  color: rgb(65 54 89 / var(--tw-text-opacity)) !important;
-}
-
-.bg-orange-500,
-.hover\:bg-orange-500:hover {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(65 54 89 / var(--tw-bg-opacity)) !important;
+.dark {
+  --primary: 259 24% 28% !important;
+  --accent: 259 24% 28% !important;
+  --sidebar-primary: 259 24% 28% !important;
+  --sidebar-ring: 259 24% 28% !important;
+  --ring: 259 24% 28% !important;
 }
 
 .focus\:ring-orange-500:focus,
