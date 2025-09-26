@@ -1,5 +1,5 @@
-const TARGET_TEXT = "Я умею сохранять бюджет";
-const SUBTITLE_TEXT = "Уже уберёг";
+const TARGET_TEXT = "Я умею защищать бюджет компаний";
+const SUBTITLE_TEXT = "И уже уберёг";
 
 const insertSubtitle = () => {
   const heading = [...document.querySelectorAll("h1, h2, h3")].find(
