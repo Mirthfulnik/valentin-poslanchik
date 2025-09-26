@@ -100,6 +100,7 @@ select {
     opacity: 0;
   }
 }
+
 /* Align portfolio case cards */
 [data-testid^="card-portfolio"] {
   display: flex;
@@ -118,4 +119,9 @@ select {
 [data-testid^="card-portfolio"] > .space-y-4 > :last-child,
 [data-testid^="card-portfolio"] > .space-y-6 > :last-child {
   margin-top: auto;
+}
+
+[data-testid^="card-portfolio"] > .space-y-4 > :nth-last-child(2),
+[data-testid^="card-portfolio"] > .space-y-6 > :nth-last-child(2) {
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
 }
