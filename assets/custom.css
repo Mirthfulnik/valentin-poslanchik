@@ -128,3 +128,248 @@ select {
 [data-testid^="card-portfolio"] > .space-y-6 > :nth-last-child(2) {
   margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
 }
+
+.privacy-link-section {
+  max-width: min(100%, 72rem);
+  margin: 4rem auto 2rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.privacy-link {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  color: rgb(65 54 89);
+  text-decoration: underline;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.privacy-link:focus,
+.privacy-link:hover {
+  opacity: 0.8;
+}
+
+.privacy-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 2.5rem);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.privacy-modal--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.privacy-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.privacy-modal__dialog {
+  position: relative;
+  width: min(55rem, 100%);
+  max-height: min(90vh, 62rem);
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 1.5rem 3rem rgba(32, 21, 54, 0.2);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  overflow: hidden;
+}
+
+.privacy-modal__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  color: rgb(65 54 89);
+}
+
+.privacy-modal__body {
+  overflow-y: auto;
+  padding-right: 0.25rem;
+  margin-right: -0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.privacy-modal__body h3 {
+  font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: rgb(65 54 89);
+}
+
+.privacy-modal__body p {
+  font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  line-height: 1.6;
+}
+
+.privacy-modal__body ul {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.privacy-modal__body li {
+  font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  line-height: 1.6;
+}
+
+.privacy-modal__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  border: none;
+  background: rgba(65, 54, 89, 0.1);
+  color: rgb(65 54 89);
+  font-size: 1.75rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.privacy-modal__close:hover,
+.privacy-modal__close:focus {
+  background: rgba(65, 54, 89, 0.2);
+  transform: scale(1.03);
+}
+
+.privacy-modal__close span {
+  transform: translateY(-0.05em);
+}
+
+body.privacy-modal-open {
+  overflow: hidden;
+}
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(65, 54, 89, 0.95);
+  color: #ffffff;
+  z-index: 900;
+  transform: translateY(100%);
+  transition: transform 0.35s ease;
+  box-shadow: 0 -0.75rem 1.75rem rgba(32, 21, 54, 0.25);
+}
+
+.cookie-banner--visible {
+  transform: translateY(0);
+}
+
+.cookie-banner__content {
+  max-width: min(62rem, 100%);
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3vw, 1.75rem) clamp(1.25rem, 5vw, 2.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cookie-banner__message {
+  flex: 1 1 18rem;
+  font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cookie-banner__link {
+  color: #f6e8ff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.cookie-banner__link:focus,
+.cookie-banner__link:hover {
+  color: #ffffff;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.cookie-banner__button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.cookie-banner__button:focus {
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.cookie-banner__button--primary {
+  background: #ffffff;
+  color: rgb(65 54 89);
+}
+
+.cookie-banner__button--primary:hover,
+.cookie-banner__button--primary:focus {
+  background: #f3eefc;
+}
+
+.cookie-banner__button--secondary {
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+.cookie-banner__button--secondary:hover,
+.cookie-banner__button--secondary:focus {
+  border-color: #ffffff;
+  color: #f6e8ff;
+}
+
+@media (max-width: 640px) {
+  .privacy-link-section {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .privacy-modal__dialog {
+    border-radius: 1rem;
+    padding: clamp(1rem, 5vw, 1.75rem);
+  }
+
+  .privacy-modal__close {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .cookie-banner__actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .cookie-banner__button {
+    width: 100%;
+    text-align: center;
+  }
+}
