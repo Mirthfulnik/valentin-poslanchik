@@ -139,4 +139,3 @@ declineButton?.addEventListener('click', () => {
 });
 
 initBanner();
-index.html
