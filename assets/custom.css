@@ -65,3 +65,38 @@ select {
   color: rgb(65 54 89);
   font-weight: 500;
 }
+
+.typewriter-text {
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.125rem, 2.3vw, 1.5rem);
+  line-height: 1.4;
+  text-align: center;
+  color: rgb(65 54 89);
+  font-weight: 500;
+  min-height: 1.5em;
+  position: relative;
+}
+
+.typewriter-text::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 6px;
+  background-color: currentColor;
+  vertical-align: baseline;
+  animation: typewriter-caret 1s steps(2, start) infinite;
+}
+
+@keyframes typewriter-caret {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
