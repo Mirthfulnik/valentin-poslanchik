@@ -7,6 +7,18 @@
   font-display: swap;
 }
 
+:root {
+  --app-vh: 100vh;
+}
+
+.hero-shell {
+  min-height: calc(var(--app-vh));
+}
+
+.is-embedded .hero-shell {
+  min-height: auto;
+}
+
 body,
 button,
 input,
